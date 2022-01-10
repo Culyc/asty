@@ -1002,6 +1002,11 @@ h6 {
   height: 40px;
   background-color: #f9fbfd;
 }
+.item-cruise__link:hover {
+  
+  transition: all 0.3s ease 0s;
+  transform: scale(120%);
+}
 .item-cruise__link span {
   text-align: center;
   color: #011c40;
