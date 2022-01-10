@@ -1003,7 +1003,7 @@ h6 {
   background-color: #f9fbfd;
 }
 .item-cruise__link:hover {
-  
+   cursor: pointer;
   transition: all 0.3s ease 0s;
   transform: scale(120%);
 }
