@@ -153,6 +153,10 @@ h6 {
 
 @media (max-width: 47.99875em) {
   .menu__body {
+    .lock & {
+				overflow: hidden;
+				touch-action: none;
+			}
     position: fixed;
     z-index: 5;
     overflow: auto;
