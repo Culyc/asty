@@ -1016,8 +1016,8 @@ transition: all 0.7s ease 0s;
 }
 .item-cruise__link:hover {
    cursor: pointer;
-  transition: all 0.3s ease 0s;
-  transform: scale(120%);
+  transition: all 0.5s ease 0s;
+  transform: scale(109%);
 }
 .item-cruise__link span {
   text-align: center;
