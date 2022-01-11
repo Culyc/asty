@@ -955,8 +955,16 @@ h6 {
   position: relative;
 }
 .item-cruise__content {
+position: relative;
   background-color: #011c40;
   padding: 25px;
+  z-index: 1;
+opacity: 0;
+transition: all 0.7s ease 0s;
+&:hover {
+	opacity: 1;
+	transition: all 0.7s ease 0s;
+	}
 }
 .item-cruise__header {
   font-family: Montserrat;
@@ -1027,7 +1035,7 @@ h6 {
   height: 100%;
   left: 0;
   opacity: 1;
-  transition: all 0.5s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 .item-cruise__image img {
   height: 100%;
@@ -1035,7 +1043,7 @@ h6 {
 }
 .item-cruise__image:hover {
   opacity: 0;
-  transition: all 0.5s ease 0s;
+  transition: all 0.7s ease 0s;
 }
 .item-cruise__header-bottom {
   font-family: Montserrat;
