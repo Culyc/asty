@@ -153,10 +153,6 @@ h6 {
 
 @media (max-width: 47.99875em) {
   .menu__body {
-    .lock & {
-				overflow: hidden;
-				touch-action: none;
-			}
     position: fixed;
     z-index: 5;
     overflow: auto;
@@ -170,6 +166,10 @@ h6 {
     padding-bottom: 1.875rem;
     padding-right: 0.9375rem;
     padding-left: 0.9375rem;
+  }
+  .lock .menu__body {
+    overflow: hidden;
+    touch-action: none;
   }
 }
 @media (max-width: 47.99875em) and (min-width: 74.375em) {
@@ -955,16 +955,16 @@ h6 {
   position: relative;
 }
 .item-cruise__content {
-position: relative;
+  position: relative;
+  z-index: 1;
   background-color: #011c40;
   padding: 25px;
-  z-index: 1;
-opacity: 0;
-transition: all 0.7s ease 0s;
-&:hover {
-	opacity: 1;
-	transition: all 0.7s ease 0s;
-	}
+  opacity: 0;
+  transition: all 0.7s ease 0s;
+}
+.item-cruise__content:hover {
+  opacity: 1;
+  transition: all 0.7s ease 0s;
 }
 .item-cruise__header {
   font-family: Montserrat;
@@ -1015,9 +1015,8 @@ transition: all 0.7s ease 0s;
   background-color: #f9fbfd;
 }
 .item-cruise__link:hover {
-   cursor: pointer;
-  transition: all 0.5s ease 0s;
-  transform: scale(109%);
+  transform: scale(110%);
+  transition: all 0.3s ease 0s;
 }
 .item-cruise__link span {
   text-align: center;
@@ -1062,6 +1061,7 @@ transition: all 0.7s ease 0s;
 .item-cruise__header-bottom:hover {
   visibility: hidden;
   opacity: 0;
+  transition: all 0.3s ease 0s;
 }
 
 .page__booking {
